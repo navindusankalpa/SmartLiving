@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeControlDashBoard.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="234dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/smart_living__3_">
+
+        </ImageView>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/settings_add_family_user"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/alpha_misty_rose"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Add Family User"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/baseline_add_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/blue" />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/settings_delete_family_user"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/alpha_misty_rose"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Revoke Family User"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/baseline_remove_circle_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/blue" />
+
+        <Button
+            android:id="@+id/settings_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/alpha_misty_rose"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Edit Profile"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/baseline_edit_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/blue" />
+
+        <Button
+            android:id="@+id/settings_get_help"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/alpha_misty_rose"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Get Help"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/baseline_help_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/blue" />
+
+        <Button
+            android:id="@+id/settings_reset_password"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/alpha_misty_rose"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Reset Password"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/baseline_lock_reset_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/blue" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

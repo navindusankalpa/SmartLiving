@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "815246628285",
+    "firebase_url": "https://smartliving-aaa3a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "smartliving-aaa3a",
+    "storage_bucket": "smartliving-aaa3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815246628285:android:9eaecb1fa849abba9aaed4",
+        "android_client_info": {
+          "package_name": "com.example.smartliving"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQXk4z3E-g_po_cjNrGaJfXfptYLHMbpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

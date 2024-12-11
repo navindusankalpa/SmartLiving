@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeControlDashBoard.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/profile_image"
+            android:layout_width="157dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/user"
+            app:shapeAppearanceOverlay="@style/profileImg" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text=""
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/profile_usertype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:text=""
+            android:textSize="14sp">
+
+        </TextView>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/materialDivider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/btn_profile_logout"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="5dp"
+            android:text="LOGOUT"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            app:cornerRadius="2dp"
+            app:icon="@drawable/baseline_logout_24"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/red"
+            app:strokeColor="@color/red">
+
+        </Button>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

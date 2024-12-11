@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".HomeControlDashBoard.GetHelpActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/metropolis_semi_bold"
+        android:text="HELP"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_title_24"
+        app:endIconMode="clear_text"
+        app:startIconTint="@color/white"
+        app:boxBackgroundColor="@color/alpha_misty_rose"
+        style="@style/CustomOutlineBox"
+        android:theme="@style/CustomOutlineBox"
+        app:boxStrokeColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/get_help_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Title"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_message_24"
+        app:endIconMode="clear_text"
+        app:startIconTint="@color/white"
+        app:boxBackgroundColor="@color/alpha_misty_rose"
+        style="@style/CustomOutlineBox"
+        android:theme="@style/CustomOutlineBox"
+        app:boxStrokeColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/get_help_message"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:hint="Message"
+            android:inputType="textMultiLine"
+            android:padding="20dp"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/get_help_btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/alpha_misty_rose"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

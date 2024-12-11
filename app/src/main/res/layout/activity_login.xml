@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg"
+    tools:context=".Login.LoginActivity">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/metropolis_semi_bold"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_alternate_email_24"
+        app:endIconMode="clear_text"
+        app:startIconTint="@color/white"
+        app:endIconTint="@color/white"
+        app:boxBackgroundColor="@color/alpha_misty_rose"
+        android:textColorHint="@color/white"
+        style="@style/CustomOutlineBox"
+        android:theme="@style/CustomOutlineBox"
+        app:boxStrokeColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:endIconMode="password_toggle"
+        app:startIconTint="@color/white"
+        app:endIconTint="@color/white"
+        app:boxBackgroundColor="@color/alpha_misty_rose"
+        android:textColorHint="@color/white"
+        style="@style/CustomOutlineBox"
+        android:theme="@style/CustomOutlineBox"
+        app:boxStrokeColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:padding="20dp"
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <CheckBox
+            app:buttonTint="@color/white"
+            android:textColor="@color/white"
+            android:id="@+id/chk_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Remember Me"
+            android:textSize="15dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Forgot password?"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:textSize="15dp"
+            android:id="@+id/forgot_psw"
+            android:backgroundTint="@color/nobackground"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:id="@+id/btn_login"
+        android:backgroundTint="@color/alpha_misty_rose"
+        android:textSize="18sp"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/clickable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textSize="14dp"
+        />
+
+
+</LinearLayout>
